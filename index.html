@@ -1,41 +1,31 @@
-<html>
+<!DOCTYPE html>
+<html lang="sv">
 <head>
-</head>
-<body>
-
-
-
-
-<h1>hej ho hallå</h1>
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gissa talet</title><body>
+    <h1>Hej ho tjena</h1>
+    <p>Detta är ett kodexempel för att jämföra programmeringsspråk.</p>
 
 <script>
-
-let num = 5;
-Let Guess = 0;
-
-
-while (guess = num) {
-Guess = prompt('Gissa på ett tal');
+    let num = 5;
+    let guess = 0;
+    while(guess != num) { //  ! =         ==
+        guess = prompt('Gissa på ett tal: ');
     
-
-    
-if (guess = number)
- alert('Du gissade rätt');
-
-    else if (guess  >  num)
-
-  alert('Gissningen är för stor');
-
-  else if (guess  >  num) {
-      
-  } alert('gissningen är för liten');
-
-  else
-      
-  } alert('någonting gick snett');
-
-  </script>
-  </body>
-</head>
+        if (guess == num) {
+            alert('Du gissade rätt');
+        } else if (guess > num) {
+            alert('Gissningen är för stor');
+        } else if (guess < num) {
+            alert('Gissningen är för liten');
+        } else {
+            alert('Någonting gick snett');
+        }
+        // if guess == num: text = 'rätt' elif guess > num: text = 'för stor' elif guess < num: text = 'för liten'
+    }
+</script>
+</body>
+</html>
 
